@@ -22,7 +22,7 @@ public class CompositePizza implements Ingrediente{
 
 	@Override
 	public double price() {
-		int price = 0;
+		double price = 0;
 		for (Ingrediente ingrediente : ingredienteList) {
 			price += ingrediente.price();
 		}
